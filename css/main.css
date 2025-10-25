@@ -1579,3 +1579,116 @@ footer {
         height: 200px;
     }
 }
+
+/* ================================================================= Contact ==================================================== */
+.contact-section {
+    padding: 60px 0;
+    background-color: var(--color-bg);
+}
+
+.contact-card-text {
+    position: relative;
+    background-image: url(../imgs/restau-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 40px;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contact-card-text::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: brightness(60%);
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.contact-info {
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.contact-card {
+    background-color: var(--color-surface);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    background-color: rgba(255, 127, 80, 0.1);
+    color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-text h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+
+.contact-text p {
+    color: var(--color-bg);
+    opacity: .7;
+    margin-bottom: 0;
+}
+.form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 127, 80, 0.25);
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.description {
+    color: var(--color-muted);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+}
