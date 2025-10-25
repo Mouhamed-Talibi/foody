@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic SEO -->
+    <title>Foody - Restaurant Marocain | Saveurs Authentiques à Marrakech</title>
+    <meta name="description" content="Découvrez Foody, votre restaurant à Marrakech. Savourez des plats marocains délicieux, un service chaleureux et une ambiance conviviale.">
+    <meta name="keywords" content="Foody, restaurant Marrakech, cuisine marocaine, plats marocains, restaurant traditionnel, déjeuner, dîner, gastronomie, saveurs marocaines">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Foody | Là où chaque bouchée raconte une histoire
+    </title>
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Fontawesom Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- loader -->
+    <span class="loader"></span>
+
+    <!-- content -->
+    <div class="content" style="opacity: 0;">
+
+        <!-- Navbar -->
+        <nav class="navbar" data-aos="fade-down" data-aos-duration="300">
+            <div class="logo">
+                <h3>Foo<span>dy</span></h3>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="index.html#why-us">Pourquoi Nous</a></li>
+                <li><a href="index.html#categories">Catégories</a></li>
+                <li><a href="index.html#testimonials">Témoignages</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="hamburger">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </button>
+
+            <div class="mobile-menu">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a>
+                <a href=""><i class="fas fa-user"></i> À propos</a>
+                <a href="index.html#why-us"><i class="fa-solid fa-lightbulb"></i> Pourquoi Nous</a>
+                <a href="index.html#categories"><i class="fa-solid fa-list"></i> Catégories</a>
+                <a href="index.html#testimonials"><i class="fa-solid fa-quote-left"></i> Témoignages</a>
+                <a href="galerie.html"><i class="fa-solid fa-image"></i> Galerie</a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </div>
+        </nav>
+        <!-- /end Navbar -->
+
+        <!-- Galery -->
+        <div class="galery">
+            <div class="main-title text-center">
+                <h1>Nos <span>Galerie</span></h1>
+                <p class="gallery-intro text-center">
+                    Découvrez l'univers culinaire de Foody à travers nos plats signature, 
+                    notre ambiance chaleureuse et nos ingrédients frais soigneusement sélectionnés. 
+                    Chaque image raconte une histoire de saveurs authentiques et de traditions marocaines.
+                </p>
+            </div>
+            
+            <div class="container">
+                <!-- Gallery Filter -->
+                <div class="gallery-filter text-center">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="plats">Plats</button>
+                    <button class="filter-btn" data-filter="entrees">Entrées</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                    <button class="filter-btn" data-filter="boissons">Boissons</button>
+                    <button class="filter-btn" data-filter="interieur">Intérieur</button>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="row g-4" id="gallery-grid">
+                    <!-- Item 1 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="plats">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Tajine marocain" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Tajine d'agneau aux pruneaux" data-bs-description="Notre tajine d'agneau aux pruneaux et amandes, mijoté lentement avec des épices marocaines authentiques.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Plats</span>
+                            <h4>Tajine d'agneau aux pruneaux</h4>
+                            <p>Un plat traditionnel riche en saveurs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="plats">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Couscous royal" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Couscous royal" data-bs-description="Notre couscous royal préparé avec sept légumes frais et accompagné de viandes tendres, un plat familial par excellence.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Plats</span>
+                            <h4>Couscous royal</h4>
+                            <p>Un classique de la cuisine marocaine</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="entrees">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Salade marocaine" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Salade marocaine" data-bs-description="Une salade fraîche aux tomates, concombres, oignons et poivrons, assaisonnée d'huile d'olive et de citron.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Entrées</span>
+                            <h4>Salade marocaine</h4>
+                            <p>Fraîcheur et légèreté</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1583244685026-d8519b5e3d21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Pâtisseries marocaines" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1583244685026-d8519b5e3d21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Pâtisseries marocaines" data-bs-description="Une sélection de nos pâtisseries traditionnelles : cornes de gazelle, ghoriba et fekkas.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Desserts</span>
+                            <h4>Pâtisseries marocaines</h4>
+                            <p>Douceurs orientales</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Thé à la menthe" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Thé à la menthe" data-bs-description="Notre thé à la menthe traditionnel, préparé avec soin et servi avec élégance.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Boissons</span>
+                            <h4>Thé à la menthe</h4>
+                            <p>La boisson emblématique du Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 7 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="interieur">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Salle à manger" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Notre salle à manger" data-bs-description="Notre espace de restauration chaleureux, décoré avec des éléments traditionnels marocains pour une immersion complète.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Intérieur</span>
+                            <h4>Salle à manger</h4>
+                            <p>Ambiance chaleureuse et authentique</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 8 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="interieur">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                alt="Terrasse" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Notre terrasse" data-bs-description="Notre belle terrasse avec vue sur les jardins, parfaite pour les dîners en plein air.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Intérieur</span>
+                            <h4>Terrasse</h4>
+                            <p>Un cadre idyllique pour vos repas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 9 -->
+                    <div class="col-md-4 col-sm-6 gallery-item" data-category="boissons">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                            alt="Jus frais" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" data-bs-title="Jus de fruits frais" data-bs-description="Nos jus de fruits fraîchement pressés, une explosion de vitamines et de saveurs naturelles.">
+                        <div class="gallery-caption">
+                            <span class="gallery-category">Boissons</span>
+                            <h4>Jus de fruits frais</h4>
+                            <p>Fraîcheur et vitalité</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /end galery -->
+
+        <!-- Image Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Titre de l'image</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" alt="" class="modal-img" id="modalImage">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="modal-description" id="modalDescription">Description de l'image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start">
+            <div class="container-fluid">
+                <!-- Rights & Social Links -->
+                <div class="rights d-flex justify-content-between align-items-center">
+                    <div class="copyright">
+                        &copy; <strong>Foody</strong>. Tous droits réservés.
+                    </div>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" class="facebook d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="instagram d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /end Footer -->
+
+    </div>
+    <!-- /end content -->
+
+    <!-- Bootstrap Js -->
+    <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- Loader -->
+    <script src="js/loader.js"></script>
+    <!-- Menu -->
+    <script src="js/menu.js"></script>
+    <!-- Galery filter -->
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Modal functionality
+            const imageModal = document.getElementById('imageModal');
+            if (imageModal) {
+                imageModal.addEventListener('show.bs.modal', function(event) {
+                    const button = event.relatedTarget;
+                    const imageSrc = button.getAttribute('data-bs-image');
+                    const imageTitle = button.getAttribute('data-bs-title');
+                    const imageDescription = button.getAttribute('data-bs-description');
+                    
+                    const modalImage = document.getElementById('modalImage');
+                    const modalTitle = document.getElementById('imageModalLabel');
+                    const modalDescription = document.getElementById('modalDescription');
+                    
+                    modalImage.src = imageSrc;
+                    modalTitle.textContent = imageTitle;
+                    modalDescription.textContent = imageDescription;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
